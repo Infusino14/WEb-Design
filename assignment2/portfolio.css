@@ -1,21 +1,69 @@
+/* This is my style sheet for my portfolio.html page */
 
 body {
     background-color: lightgray;
     margin: 3%;
     font-family: sans-serif;
 }
+
 h1 {
     text-align: center;
     font-family: sans-serif;
     text-transform: uppercase;
     border-bottom: 1px solid black;
     margin-top: 20px;
+    text-shadow: -.2em -.2em silver;
 }
+
 h2 {
     text-align: left;
-    font-family: sans-serif;
+    font-family: Verdana, sans-serif;
     font-size: 24px;
 }
+
 p {
     font-size: 16px;
+    background: silver;
+    width: auto;
+    height: auto;
+    line-height: 1.5;
+    padding: 15px;
+    border: 5px black;
+    margin: 10px;
+    font-family: Verdana, sans-serif;
+    overflow: auto;
+}
+
+ul {
+    font-size: 16px;
+    background: silver;
+    width: auto;
+    height: auto;
+    line-height: 1.5;
+    padding: 20px;
+    border: 5px black;
+    margin: 10px; 
+    font-family: Verdana, sans-serif;
+}
+
+img[src = "vinnyProfileImage.jpg"] {
+    float: right;
+    width: 175px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+img[src = "marquette.jpg"] {
+    float: right;
+    width: 175px;
+    height: 150px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+img[src = "astro.jpg"] {
+    float: right;
+    width: 175px;
+    height: 150px;
+    margin-left: 5px;
 }
