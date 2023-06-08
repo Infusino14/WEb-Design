@@ -15,12 +15,29 @@
     Username: <input id="username"> <br> <br>
     Password: <input id="pwd"> <br> <br>
 
-    <button onclick="chkAlert()">Submit</button>
+    <button type = "button" onclick="chkAlert()">Submit</button>
 
     <script>
-    function chkAlert(){
+    function chkAlert() {
         //ADD YOUR CODE HERE
+
+        //Get the value of username and password
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("pwd").value;
+
+        //Set the actual username and password
+        let usernameActual = "vinny";
+        let passwordActual = '123*';
+
+        if (username == usernameActual && password == passwordActual)
+        {
+            alert("Username and Password are Correct")
         }
+        else
+        {
+            alert("Invalid Username or Password")
+        }
+    }
     </script>
 
 </body>
