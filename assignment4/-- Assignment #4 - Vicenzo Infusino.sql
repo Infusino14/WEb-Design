@@ -3,9 +3,24 @@
 
 -- 1. Find the names of all (students) CS majors.
 
+SELECT
+    SName
+FROM Student
+WHERE Major = "CS";
+
 -- 2. Find the names of all (students) MATH majors who are also in their "Senior" year.
 
+SELECT
+    SName
+FROM Student
+WHERE Major = "MATH" AND Year = "Senior";
+
 -- 3. Find the names of courses being taught by "Professor Henry".
+
+SELECT
+    c.CName
+FROM Course c, Faculty f
+WHERE c.FID = f.FID AND f.FName = "Professor Henry";
 
 -- 4. List the IDs and names of courses offered by the "Physics" and "Chemistry departments".
 
