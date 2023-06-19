@@ -30,3 +30,7 @@ FROM Course c, Dept d
 WHERE c.DName = d.DName AND (d.DName = "Physics" or d.Dname = "Chemistry");
 
 -- 5. Find the names of all faculty members who work in the departments that have less than 20 professors.
+SELECT
+    f.FName
+FROM Faculty f, Department d
+WHERE f.DName = d.DName AND d.NumProf < 20;
