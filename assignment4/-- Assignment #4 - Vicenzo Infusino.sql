@@ -27,7 +27,7 @@ SELECT
     c.CID,
     c.CName
 FROM Course c, Dept d
-WHERE c.DName = d.DName AND (d.DName = "Physics" or d.Dname = "Chemistry");
+WHERE c.DName = d.DName AND (d.DName = "Physics" or d.DName = "Chemistry");
 
 -- 5. Find the names of all faculty members who work in the departments that have less than 20 professors.
 SELECT
